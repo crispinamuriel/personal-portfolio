@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Route } from "react-router-dom";
+import { Link, HashRouter as Router, Route } from "react-router-dom";
 import Navbar from './Navbar';
 import Projects from './Projects';
 import AboutMe from './AboutMe';
@@ -13,7 +13,9 @@ export default class Main extends React.Component {
         <div id='main'>
           <div className='column container'>
             <div id='header'>
-              <h1>Crispina R. Muriel</h1>
+              <Link to="/">
+                <h1>Crispina R. Muriel</h1>
+              </Link>
             </div>
             <Navbar />
           </div>
