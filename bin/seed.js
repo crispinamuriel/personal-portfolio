@@ -14,67 +14,60 @@ const loremHipsum = () => hipsum({
 const seed = async () => {
   await db.sync({force: true})
 
-  const cody = await Author.create({name: 'Cody', bio: 'A friendly pug', imageUrl: 'cody.jpg'})
-  const fira = await Author.create({name: 'Fira', bio: 'A friendly python', imageUrl: 'fira.jpg'})
-  const earl = await Author.create({name: 'Earl', bio: 'A somewhat less friendly cat', imageUrl: 'earl.png'})
+  const jenn = await Author.create({name: 'Crispina', bio: 'Fullstack Dev', imageUrl: 'cody.jpg'})
+
 
   const story1 = await Story.create({
-    title: 'A bone to pick with jQuery',
+    title: 'Codewords',
     content: loremHipsum(),
-    imageUrl: '',
-    authorId: cody.id
+    imageUrl: 'codewordsIcon.jpg',
+    authorId: jenn.id
   })
 
   const story2 = await Story.create({
-    title: 'How to React (to treats!)',
+    title: 'LoveLaces',
     content: loremHipsum(),
-    imageUrl: '',
-    authorId: cody.id
-  })
+    imageUrl: "",
+    authorId: jenn.id
+  });
 
   const story3 = await Story.create({
-    title: 'Functional programming with python',
+    title: "Recipe App",
     content: loremHipsum(),
-    imageUrl: '',
-    authorId: fira.id
-  })
-
-  const story4 = await Story.create({
-    title: 'Angular: time for the litter box',
-    content: loremHipsum(),
-    imageUrl: '',
-    authorId: earl.id
-  })
+    imageUrl: "",
+    authorId: jenn.id
+  });
 
   await Comment.create({
-    content: 'I love this article as much as I hate dogs',
-    authorId: earl.id,
+    content: "I love this article as much as I hate dogs",
+    authorId: jenn.id,
     storyId: story1.id
-  })
+  });
 
   await Comment.create({
-    content: 'I wish JavaScript variables were in snake_case!',
-    authorId: fira.id,
+    content: "I wish JavaScript variables were in snake_case!",
+    authorId: jenn.id,
     storyId: story1.id
-  })
+  });
 
   await Comment.create({
-    content: 'Do you have an example of using a constrictor...I mean, constructor function?',
-    authorId: fira.id,
+    content:
+      "Do you have an example of using a constrictor...I mean, constructor function?",
+    authorId: jenn.id,
     storyId: story2.id
-  })
+  });
 
   await Comment.create({
-    content: 'I love this article as much as I love treats',
-    authorId: cody.id,
+    content: "I love this article as much as I love treats",
+    authorId: jenn.id,
     storyId: story3.id
-  })
+  });
 
   await Comment.create({
-    content: 'Angular\'s really in the doghouse!',
-    authorId: cody.id,
-    storyId: story4.id
-  })
+    content: "Angular's really in the doghouse!",
+    authorId: jenn.id,
+    storyId: story1.id
+  });
 
   db.close()
   console.log(`
