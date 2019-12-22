@@ -1,11 +1,10 @@
 import React from 'react';
 
-const Landing = () => (
-  <img
-    id="landing"
-    src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07"
-    width="500"
-  />
+const Landing = () => (<div>
+  <h1 className="center">Welcome</h1>
+
+</div>
+
 );
 
 export default Landing;

@@ -5,14 +5,14 @@ export default class AboutMe extends Component {
   constructor () {
     super()
     this.state = {
-      stories: []
+      info: []
     }
   }
 
   async componentDidMount () {
     try {
-      const storiesResponse = await axios.get('/api/stories')
-      this.setState({ stories: storiesResponse.data })
+      const infoResponse = await axios.get('/api/info')
+      this.setState({ info: infoResponse.data })
     }
     catch (error) {
       console.error(error)
@@ -20,24 +20,28 @@ export default class AboutMe extends Component {
   }
 
   render () {
-    const stories = this.state.stories
+    const info = this.state.info
 
     return (
-      <div id='stories' className='column'>
-        {
-          stories.map(story => (
-            <div className='story' key={story.id}>
+      <div id="container">
+        <img id="photo" className="card"src="CrispinaMuriel.JPG" width="180" height="270" />
+        <div id="stories" className="column quotes">
+          {info.map(infoEntry => (
+            <div className="story opacity card" key={infoEntry.id}>
+              <div className="story opacity box" key={infoEntry.id}>
+                <img src={infoEntry.imgUrl} width="500" />
+              </div>
               <a>
-                <h3>{story.title}</h3>
+                <h3>{infoEntry.title}</h3>
               </a>
               <a>
-                <p>{story.author.name}</p>
+                <p>{infoEntry.content}</p>
               </a>
               <hr />
             </div>
-          ))
-        }
+          ))}
+        </div>
       </div>
-    )
+    );
   }
 }
