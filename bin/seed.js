@@ -41,6 +41,12 @@ const seed = async () => {
     authorId: jenn.id
   });
 
+  const info = await Info.create({
+    title: "Technical Skills",
+    content: "JavaScript (es6+), HTML5, CSS, React.js, Redux.js, Node.js, Express.js, PostgreSQL, Sequelize, SQL, RDBMS, Babel, Webpack, Git, GitHub, AJAX, REST, APIs, JSON, WebSockets, Socket.io, Jasmine, Mocha, Chai, Enzyme, LocalStorage, uuid, Full Stack development, Heroku, Google OAuth, Agile, SCRUM, Pair Programming, UI/UX, web design",
+    imgUrl: "dev-logos.png"
+  });
+
   const info1 = await Info.create({
     title: "Professional Background",
     content: "My passions are Tech, Learning, and Education. I have credentials to teach elementary school in California and New York. As a user of educational apps in my classroom, I was always inspired at how tech seemed to motivate my class to learn.  I loved my time spent working with children and hope to one day contribute to the EdTech field, that reaches thousands children in a meaningful way. I have been coding and building fullstack applications for over a year. JavaScript is fun to work with and I love how creative I can be with it.",
