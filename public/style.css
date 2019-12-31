@@ -305,7 +305,7 @@ h1 {
 .quotes .box {
   position: relative;
   width: 40vw;
-  height: 55vh;
+  height: 60vh;
   min-height: 320px;
   background: #f2f2f2;
   overflow: hidden;
@@ -333,7 +333,7 @@ h1 {
   bottom: -10%;
   right: 5%;
   font-size: 120px;
-  opacity: 0.2;
+  opacity: 1;
   background: transparent;
   filter: invert(1);
   pointer-events: none;
@@ -349,7 +349,7 @@ h1 {
   position: absolute;
   margin: 0;
   padding: 0;
-  bottom: 10%;
+  bottom: 50%;
   right: 10%;
   font-size: 1.5rem;
 }
@@ -357,6 +357,7 @@ h1 {
 .quotes .box:hover {
   color: #f2f2f2;
   box-shadow: 20px 5px 100px rgba(0, 0, 0, 0.5);
+  opacity: 1;
 }
 
 .inline-svg {
@@ -422,4 +423,8 @@ h1 {
 
 .margin-bottom {
   margin-bottom: 5px;
+}
+
+.margin-left {
+  margin-left: 5px;
 }
