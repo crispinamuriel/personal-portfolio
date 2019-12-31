@@ -25,9 +25,15 @@ export default class Projects extends Component {
       <div id="stories" className="column">
         <h2>Technical Projects</h2>
         {stories.map(story => (
-          <div className="story opacity" key={story.id}>
+          <div className="story story2 opacity" key={story.id}>
+          <hr />
             <a href={story.projectUrl} target="_blank">
-              <h3 id="project">{story.title}</h3>
+              <div className="centered solid">
+                <img src={story.imageUrl} width="100" />
+              </div>
+              <h3 id="project">
+                {story.title}
+              </h3>
             </a>
             <p>{story.content}</p>
             <hr />

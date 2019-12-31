@@ -18,12 +18,12 @@ const seed = async () => {
 
 
   const story1 = await Story.create({
-    title: 'Codewords',
-    content: 'A multiplayer game based of of the board game Codenames',
-    imageUrl: 'codewordsIcon.jpg',
-    projectUrl: 'https://codewords-1909-gracehopper.herokuapp.com/',
+    title: "Codewords",
+    content: "A multiplayer game based of of the board game Codenames",
+    imageUrl: "https://codewords-1909-gracehopper.herokuapp.com/codewords.png",
+    projectUrl: "https://codewords-1909-gracehopper.herokuapp.com/",
     authorId: jenn.id
-  })
+  });
 
   const story2 = await Story.create({
     title: "LoveLaces",
@@ -43,8 +43,8 @@ const seed = async () => {
 
   const info1 = await Info.create({
     title: "Professional Background",
-    content: "My passions are Tech, Learning, and Education. I have credentials to teach elementary school in California and New York. As a user of educational apps in my classroom, I always marveled at how tech seemed to motivate my class to learn.  I loved my time spent working with children and hope to one day contribute to the EdTech field, that reaches thousands children in a meaningful way. I have been learning and building fullstack applications for over a year. JavaScript is my greatest passion and I love how creative I can be with it.",
-    imgUrl: "https://cdn.newsday.com/polopoly_fs/1.27934089.1551571293!/httpImage/image.jpg_gen/derivatives/landscape_768/image.jpg"
+    content: "My passions are Tech, Learning, and Education. I have credentials to teach elementary school in California and New York. As a user of educational apps in my classroom, I was always inspired at how tech seemed to motivate my class to learn.  I loved my time spent working with children and hope to one day contribute to the EdTech field, that reaches thousands children in a meaningful way. I have been coding and building fullstack applications for over a year. JavaScript is fun to work with and I love how creative I can be with it.",
+    imgUrl: "https://www.daydreameducation.co.uk/wp/wp-content/uploads/2017/11/582dee49a5ecf.image_.jpg"
   });
 
   const info2  = await Info.create({
