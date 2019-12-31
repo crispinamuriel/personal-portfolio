@@ -24,7 +24,13 @@ export default class AboutMe extends Component {
 
     return (
       <div id="container">
-        <img id="photo" className="card"src="CrispinaMuriel.JPG" width="180" height="270" />
+        <img
+          id="photo"
+          className="card inline-svg"
+          src="CrispinaMuriel.JPG"
+          width="180"
+          height="270"
+        />
         <div id="stories" className="column quotes">
           {info.map(infoEntry => (
             <div className="story opacity card" key={infoEntry.id}>

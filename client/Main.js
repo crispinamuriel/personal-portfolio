@@ -14,7 +14,7 @@ export default class Main extends React.Component {
           <div className='column container'>
             <div id='header'>
               <Link to="/">
-                <h1>Crispina R. Muriel</h1>
+                <h1 className="title">Crispina R. Muriel</h1>
               </Link>
             </div>
             <Navbar />

@@ -4,11 +4,7 @@ const {Story, Author} = require('../db')
 // GET /api/stories
 router.get('/', async (req, res, next) => {
   try {
-    const stories = await Story.findAll({
-      where: req.query,
-      attributes: ['id', 'title'],
-      include: [Author]
-    })
+    const stories = await Story.findAll({})
     res.json(stories)
   }
   catch (error) {

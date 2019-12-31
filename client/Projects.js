@@ -20,17 +20,16 @@ export default class Projects extends Component {
 
   render() {
     const stories = this.state.stories;
-
+    console.log(stories)
     return (
       <div id="stories" className="column">
+        <h2>Technical Projects</h2>
         {stories.map(story => (
-          <div className="story" key={story.id}>
-            <a>
-              <h3>{story.title}</h3>
+          <div className="story opacity" key={story.id}>
+            <a href={story.projectUrl} target="_blank">
+              <h3 id="project">{story.title}</h3>
             </a>
-            <a>
-              <p>{story.author.name}</p>
-            </a>
+            <p>{story.content}</p>
             <hr />
           </div>
         ))}

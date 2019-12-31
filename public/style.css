@@ -1,4 +1,6 @@
 /* tags */
+@import url('https://fonts.googleapis.com/css?family=Patua+One&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -50,7 +52,6 @@ i {
 .img {
   max-height: 100px;
   max-width: 100px;
-  border-radius: 5px;
   margin-right: 10px;
 }
 
@@ -271,7 +272,7 @@ h1 {
   align-items: center;
   margin-top: 15px;
   margin-right: 15px;
-  border-radius: 10%;
+
 }
 
 .quotes {
@@ -338,4 +339,21 @@ h1 {
 .quotes .box:hover {
   color: #f2f2f2;
   box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5);
+}
+
+.inline-svg {
+  /* Doesn't work at all in IE */
+
+  border: 10px solid white;
+  border-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50'><defs><linearGradient id='redgradient'><stop offset='0' stop-color='%23f1cfc9'/><stop offset='0.362' stop-color='%23FF4834'/><stop offset='1' stop-color='%23f1cfc9'/></linearGradient></defs><g id='Layer_1'><path d='M0,0 L50,0 L50,50 L0,50 L0,0 z' fill='url(%23redgradient)' width='100%' height='100%'/></g></svg>") 10% stretch;
+}
+
+.title {
+  font-family: 'Patua One', cursive;
+}
+
+#project {
+  text-decoration: none;
+  color: #ff9900;
+  font-weight: bold;
 }
