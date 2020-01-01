@@ -43,7 +43,7 @@ const seed = async () => {
 
   const info = await Info.create({
     title: "Technical Skills",
-    content: "JavaScript (es6+), HTML5, CSS, React.js, Redux.js, Node.js, Express.js, PostgreSQL, Sequelize, SQL, RDBMS, Babel, Webpack, Git, GitHub, AJAX, REST, APIs, JSON, WebSockets, Socket.io, Jasmine, Mocha, Chai, Enzyme, LocalStorage, uuid, Full Stack development, Heroku, Google OAuth, Agile, SCRUM, Pair Programming, UI/UX, web design",
+    content: "JavaScript (es6+), HTML5, CSS, React.js, Redux.js, Node.js, Express.js, PostgreSQL, Sequelize, SQL, RDBMS, Babel, Webpack, Git, GitHub, AJAX, REST, APIs, JSON, WebSockets, Socket.io, Jasmine, Mocha, Chai, Enzyme, LocalStorage, uuid, Full Stack Development, Heroku, Google OAuth, Agile, SCRUM, Pair Programming, UI/UX, Web Design",
     imgUrl: "dev-logos.png"
   });
 

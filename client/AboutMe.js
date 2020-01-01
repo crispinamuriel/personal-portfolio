@@ -26,10 +26,10 @@ export default class AboutMe extends Component {
       <div id="container">
         <img
           id="photo"
-          className="card inline-svg story4"
+          className="circle card story4"
           src="CrispinaMuriel.JPG"
-          width="180"
-          height="270"
+          width="280"
+          height="280"
         />
         <div id="stories" className="column quotes">
           {info.map(infoEntry => (
