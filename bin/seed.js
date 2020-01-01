@@ -1,15 +1,6 @@
 #!/usr/bin/env node
-
-const hipsum = require('lorem-hipsum')
 const {db, Author, Comment, Story, Info} = require('../server/db')
 
-const loremHipsum = () => hipsum({
-  count: 3,
-  units: 'paragraphs',
-  paragraphLowerBound: 3,
-  paragraphUpperBound: 15,
-  format: 'plain'
-})
 
 const seed = async () => {
   await db.sync({force: true})
@@ -60,15 +51,16 @@ const seed = async () => {
   });
 
   const info3 = await Info.create({
-    title: "Personal Interests",
-    content:  "I love to cook, I bake my own pizza from scratch, and I roll my own sushi. I also love to play video games. My interest in gaming started when I was about 6 years old with an ATARI my parents borrowed from a relative. Ever since then I have been an avid gamer. Please ask me about NES/SNES games or soundtracks!",
-    imgUrl: "personal.jpg"
-  });
-
-  const info4 = await Info.create({
     title: "Professional Interests",
     content: "I've attended a few AWS Loft events and single-day 'bootcamps' about Machine Learning, Internet of Things, and Blockchain. I am interested in learning more about these topics. If you feel like you want to discuss TensorFlow, let's have some grab some tea and chat together! The next languages I'm looking to learn next  are Python, Typescript, and Java.",
     imgUrl: "iot.jpg"
+  });
+
+  const info4 = await Info.create({
+    title: "Personal Interests",
+    content:
+      "I love to cook, I bake my own pizza from scratch, and I roll my own sushi. I also love to play video games. My interest in gaming started when I was about 6 years old with an ATARI my parents borrowed from a relative. Ever since then I have been an avid gamer. Please ask me about NES/SNES games or soundtracks!",
+    imgUrl: "personal.jpg"
   });
 
   db.close()

@@ -7,7 +7,9 @@
     "start": "npm run start-server & npm run build-watch",
     "build-watch": "webpack -w",
     "start-server": "nodemon --watch server -e js,html server/main.js",
-    "seed": "node ./bin/seed"
+    "seed": "node ./bin/seed",
+    "deploy": "script/deploy",
+    "heroku-token": "script/encrypt-heroku-auth-token.js"
   },
   "author": "",
   "license": "ISC",

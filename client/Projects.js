@@ -23,7 +23,7 @@ export default class Projects extends Component {
     console.log(stories)
     return (
       <div id="stories" className="column">
-        <h2>Technical Projects</h2>
+        <h2 className="shadow">Technical Projects</h2>
         {stories.map(story => (
           <div className="story story2 opacity" key={story.id}>
           <hr />

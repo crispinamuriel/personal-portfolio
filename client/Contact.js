@@ -11,7 +11,7 @@ const Contact = () => (
           <img src="gmail.png" width="50" />
         </div>
         <div className="margin-left">
-          <h3>Email:</h3>
+          <h3 className="shadow">Email:</h3>
           crispinamuriel@gmail.com
         </div>
       </a>
@@ -27,7 +27,7 @@ const Contact = () => (
           <img src="linkedin.png" width="50" />
         </div>
         <div className="margin-left">
-          <h3>LinkedIn:</h3>
+          <h3 className="shadow">LinkedIn:</h3>
           https://www.linkedin.com/in/crispinarmuriel/
         </div>
       </a>
@@ -43,8 +43,8 @@ const Contact = () => (
           <img src="github.png" width="50" />
         </div>
         <div className="margin-left">
-          <h3>Github:</h3>
-        https://github.com/crispinamuriel
+          <h3 className="shadow">Github:</h3>
+          https://github.com/crispinamuriel
         </div>
       </a>
       <hr />

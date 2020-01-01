@@ -26,7 +26,7 @@ export default class AboutMe extends Component {
       <div id="container">
         <img
           id="photo"
-          className="circle card story4"
+          className="circle card story4 sticky"
           src="CrispinaMuriel.JPG"
           width="280"
           height="280"
