@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const {Story, Author} = require('../db')
+const {Story} = require('../db')
 
 // GET /api/stories
 router.get('/', async (req, res, next) => {
